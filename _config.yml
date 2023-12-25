@@ -30,7 +30,8 @@ twitter_username: jekyllrb
 github_username:  jekyll
 repository: sxkuroki/sxkuroki.github.io
 # Build settings
-theme: "minimal-mistakes-jekyll"
+#theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "neon"
 plugins:
   - jekyll-feed
