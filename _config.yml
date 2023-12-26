@@ -18,17 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: "King's Dominion"
+name: "Anmol Shah"
+email: shahkanmol@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The website for a guy who's into a lot of things. If you want to talk about life or something, I'm always down.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-repository: sxkuroki/sxkuroki.github.io
+url: "https://sxkuroki/sxkuroki.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  sxkuroki
+repository: "sxkuroki/sxkuroki.github.io"
 # Build settings
 #theme: "minimal-mistakes-jekyll"
 remote_theme: "mmistakes/minimal-mistakes"
@@ -36,6 +34,42 @@ minimal_mistakes_skin: "neon"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+
+title_seperator: "|"
+
+defaults:
+  #_posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      read_time: true
+
+author:
+  name: "Anmol Shah"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "I'm just a guy into comic books, cryptography, number theory, anime, and people things. Hit me up if you want to talk about **anything**"
+  location: "Undisclosed"
+  links: 
+    - label: "King's Dominion"
+      icon: "fas fa-fw fa-link"
+      url: "https://sxkuroki.github.io"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sxkuroki"
+
+lunr:
+  search_within_pages: true
+
+
+
+
+
+
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
